@@ -1,0 +1,1160 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C613FCF1D990AA700D64351 /* BaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C613FCE1D990AA700D64351 /* BaseKey.swift */; };
+		0C694E461D95313900764129 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C694E451D95313900764129 /* AudioToolbox.framework */; };
+		0C6D4CCD1D91515F006B69F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D4CCC1D91515F006B69F7 /* AppDelegate.swift */; };
+		0C6D4CCF1D91515F006B69F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D4CCE1D91515F006B69F7 /* ViewController.swift */; };
+		0C6D4CD21D91515F006B69F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4CD01D91515F006B69F7 /* Main.storyboard */; };
+		0C6D4CD41D91515F006B69F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4CD31D91515F006B69F7 /* Assets.xcassets */; };
+		0C6D4CD71D91515F006B69F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4CD51D91515F006B69F7 /* LaunchScreen.storyboard */; };
+		0C6D4CE21D915160006B69F7 /* PianoKeyBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D4CE11D915160006B69F7 /* PianoKeyBoardTests.swift */; };
+		0C6D4CED1D915160006B69F7 /* PianoKeyBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D4CEC1D915160006B69F7 /* PianoKeyBoardUITests.swift */; };
+		0C6D4D011D9154CE006B69F7 /* BlackKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D4D001D9154CE006B69F7 /* BlackKey.swift */; };
+		0C6D4D031D9154DF006B69F7 /* WhiteKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D4D021D9154DF006B69F7 /* WhiteKey.swift */; };
+		0C6D4D301D915AA9006B69F7 /* ebony_keydown.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D0E1D915AA8006B69F7 /* ebony_keydown.png */; };
+		0C6D4D311D915AA9006B69F7 /* ebony_keydown2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D0F1D915AA8006B69F7 /* ebony_keydown2.png */; };
+		0C6D4D321D915AA9006B69F7 /* ebony_keyup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D101D915AA8006B69F7 /* ebony_keyup.png */; };
+		0C6D4D331D915AA9006B69F7 /* ebony_keyup2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D111D915AA8006B69F7 /* ebony_keyup2.png */; };
+		0C6D4D371D915AA9006B69F7 /* ivory_keydown.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D151D915AA9006B69F7 /* ivory_keydown.png */; };
+		0C6D4D381D915AA9006B69F7 /* ivory_keydown2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D161D915AA9006B69F7 /* ivory_keydown2.png */; };
+		0C6D4D391D915AA9006B69F7 /* ivory_keyup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D171D915AA9006B69F7 /* ivory_keyup.png */; };
+		0C6D4D3A1D915AA9006B69F7 /* ivory_keyup2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D181D915AA9006B69F7 /* ivory_keyup2.png */; };
+		0C6D4D3F1D915AA9006B69F7 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D1D1D915AA9006B69F7 /* transparent.png */; };
+		0C6D4D4C1D915AD4006B69F7 /* keyboardLayout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D4B1D915AD4006B69F7 /* keyboardLayout.plist */; };
+		0C6D4DA81D915AE5006B69F7 /* 0A.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D4D1D915AE4006B69F7 /* 0A.aif */; };
+		0C6D4DA91D915AE5006B69F7 /* 0As.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D4E1D915AE4006B69F7 /* 0As.aif */; };
+		0C6D4DAA1D915AE5006B69F7 /* 0B.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D4F1D915AE4006B69F7 /* 0B.aif */; };
+		0C6D4DAB1D915AE5006B69F7 /* 1C.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D501D915AE4006B69F7 /* 1C.aif */; };
+		0C6D4DAC1D915AE5006B69F7 /* 1Cs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D511D915AE4006B69F7 /* 1Cs.aif */; };
+		0C6D4DAD1D915AE5006B69F7 /* 1D.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D521D915AE4006B69F7 /* 1D.aif */; };
+		0C6D4DAE1D915AE5006B69F7 /* 1Ds.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D531D915AE4006B69F7 /* 1Ds.aif */; };
+		0C6D4DAF1D915AE5006B69F7 /* 1E.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D541D915AE4006B69F7 /* 1E.aif */; };
+		0C6D4DB01D915AE5006B69F7 /* 1F.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D551D915AE4006B69F7 /* 1F.aif */; };
+		0C6D4DB11D915AE5006B69F7 /* 1Fs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D561D915AE4006B69F7 /* 1Fs.aif */; };
+		0C6D4DB21D915AE5006B69F7 /* 1G.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D571D915AE4006B69F7 /* 1G.aif */; };
+		0C6D4DB31D915AE5006B69F7 /* 1Gs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D581D915AE4006B69F7 /* 1Gs.aif */; };
+		0C6D4DB41D915AE5006B69F7 /* 2A.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D591D915AE4006B69F7 /* 2A.aif */; };
+		0C6D4DB51D915AE5006B69F7 /* 2As.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D5A1D915AE4006B69F7 /* 2As.aif */; };
+		0C6D4DB61D915AE5006B69F7 /* 2B.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D5B1D915AE4006B69F7 /* 2B.aif */; };
+		0C6D4DB71D915AE5006B69F7 /* 2C.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D5C1D915AE4006B69F7 /* 2C.aif */; };
+		0C6D4DB81D915AE5006B69F7 /* 2Cs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D5D1D915AE4006B69F7 /* 2Cs.aif */; };
+		0C6D4DB91D915AE5006B69F7 /* 2D.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D5E1D915AE4006B69F7 /* 2D.aif */; };
+		0C6D4DBA1D915AE5006B69F7 /* 2Ds.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D5F1D915AE4006B69F7 /* 2Ds.aif */; };
+		0C6D4DBB1D915AE5006B69F7 /* 2E.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D601D915AE4006B69F7 /* 2E.aif */; };
+		0C6D4DBC1D915AE5006B69F7 /* 2F.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D611D915AE4006B69F7 /* 2F.aif */; };
+		0C6D4DBD1D915AE5006B69F7 /* 2Fs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D621D915AE4006B69F7 /* 2Fs.aif */; };
+		0C6D4DBE1D915AE5006B69F7 /* 2G.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D631D915AE4006B69F7 /* 2G.aif */; };
+		0C6D4DBF1D915AE5006B69F7 /* 2Gs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D641D915AE4006B69F7 /* 2Gs.aif */; };
+		0C6D4DC01D915AE5006B69F7 /* 3A.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D651D915AE4006B69F7 /* 3A.aif */; };
+		0C6D4DC11D915AE5006B69F7 /* 3As.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D661D915AE4006B69F7 /* 3As.aif */; };
+		0C6D4DC21D915AE5006B69F7 /* 3B.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D671D915AE4006B69F7 /* 3B.aif */; };
+		0C6D4DC31D915AE5006B69F7 /* 3C.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D681D915AE4006B69F7 /* 3C.aif */; };
+		0C6D4DC41D915AE5006B69F7 /* 3Cs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D691D915AE4006B69F7 /* 3Cs.aif */; };
+		0C6D4DC51D915AE5006B69F7 /* 3D.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D6A1D915AE4006B69F7 /* 3D.aif */; };
+		0C6D4DC61D915AE5006B69F7 /* 3Ds.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D6B1D915AE4006B69F7 /* 3Ds.aif */; };
+		0C6D4DC71D915AE5006B69F7 /* 3E.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D6C1D915AE4006B69F7 /* 3E.aif */; };
+		0C6D4DC81D915AE5006B69F7 /* 3F.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D6D1D915AE4006B69F7 /* 3F.aif */; };
+		0C6D4DC91D915AE5006B69F7 /* 3Fs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D6E1D915AE4006B69F7 /* 3Fs.aif */; };
+		0C6D4DCA1D915AE5006B69F7 /* 3G.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D6F1D915AE4006B69F7 /* 3G.aif */; };
+		0C6D4DCB1D915AE5006B69F7 /* 3Gs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D701D915AE4006B69F7 /* 3Gs.aif */; };
+		0C6D4DCC1D915AE5006B69F7 /* 4A.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D711D915AE4006B69F7 /* 4A.aif */; };
+		0C6D4DCD1D915AE5006B69F7 /* 4As.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D721D915AE4006B69F7 /* 4As.aif */; };
+		0C6D4DCE1D915AE5006B69F7 /* 4B.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D731D915AE4006B69F7 /* 4B.aif */; };
+		0C6D4DCF1D915AE5006B69F7 /* 4C.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D741D915AE4006B69F7 /* 4C.aif */; };
+		0C6D4DD01D915AE5006B69F7 /* 4Cs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D751D915AE4006B69F7 /* 4Cs.aif */; };
+		0C6D4DD11D915AE5006B69F7 /* 4D.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D761D915AE4006B69F7 /* 4D.aif */; };
+		0C6D4DD21D915AE5006B69F7 /* 4Ds.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D771D915AE4006B69F7 /* 4Ds.aif */; };
+		0C6D4DD31D915AE5006B69F7 /* 4E.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D781D915AE4006B69F7 /* 4E.aif */; };
+		0C6D4DD41D915AE5006B69F7 /* 4F.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D791D915AE4006B69F7 /* 4F.aif */; };
+		0C6D4DD51D915AE5006B69F7 /* 4Fs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D7A1D915AE4006B69F7 /* 4Fs.aif */; };
+		0C6D4DD61D915AE5006B69F7 /* 4G.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D7B1D915AE4006B69F7 /* 4G.aif */; };
+		0C6D4DD71D915AE5006B69F7 /* 4Gs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D7C1D915AE4006B69F7 /* 4Gs.aif */; };
+		0C6D4DD81D915AE5006B69F7 /* 5A.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D7D1D915AE4006B69F7 /* 5A.aif */; };
+		0C6D4DD91D915AE5006B69F7 /* 5As.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D7E1D915AE4006B69F7 /* 5As.aif */; };
+		0C6D4DDA1D915AE5006B69F7 /* 5B.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D7F1D915AE4006B69F7 /* 5B.aif */; };
+		0C6D4DDB1D915AE5006B69F7 /* 5C.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D801D915AE4006B69F7 /* 5C.aif */; };
+		0C6D4DDC1D915AE5006B69F7 /* 5Cs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D811D915AE4006B69F7 /* 5Cs.aif */; };
+		0C6D4DDD1D915AE5006B69F7 /* 5D.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D821D915AE4006B69F7 /* 5D.aif */; };
+		0C6D4DDE1D915AE5006B69F7 /* 5Ds.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D831D915AE4006B69F7 /* 5Ds.aif */; };
+		0C6D4DDF1D915AE5006B69F7 /* 5E.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D841D915AE4006B69F7 /* 5E.aif */; };
+		0C6D4DE01D915AE5006B69F7 /* 5F.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D851D915AE4006B69F7 /* 5F.aif */; };
+		0C6D4DE11D915AE5006B69F7 /* 5Fs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D861D915AE4006B69F7 /* 5Fs.aif */; };
+		0C6D4DE21D915AE5006B69F7 /* 5G.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D871D915AE4006B69F7 /* 5G.aif */; };
+		0C6D4DE31D915AE5006B69F7 /* 5Gs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D881D915AE4006B69F7 /* 5Gs.aif */; };
+		0C6D4DE41D915AE5006B69F7 /* 6A.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D891D915AE4006B69F7 /* 6A.aif */; };
+		0C6D4DE51D915AE5006B69F7 /* 6As.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D8A1D915AE4006B69F7 /* 6As.aif */; };
+		0C6D4DE61D915AE5006B69F7 /* 6B.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D8B1D915AE5006B69F7 /* 6B.aif */; };
+		0C6D4DE71D915AE5006B69F7 /* 6C.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D8C1D915AE5006B69F7 /* 6C.aif */; };
+		0C6D4DE81D915AE5006B69F7 /* 6Cs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D8D1D915AE5006B69F7 /* 6Cs.aif */; };
+		0C6D4DE91D915AE5006B69F7 /* 6D.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D8E1D915AE5006B69F7 /* 6D.aif */; };
+		0C6D4DEA1D915AE5006B69F7 /* 6Ds.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D8F1D915AE5006B69F7 /* 6Ds.aif */; };
+		0C6D4DEB1D915AE5006B69F7 /* 6E.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D901D915AE5006B69F7 /* 6E.aif */; };
+		0C6D4DEC1D915AE5006B69F7 /* 6F.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D911D915AE5006B69F7 /* 6F.aif */; };
+		0C6D4DED1D915AE5006B69F7 /* 6Fs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D921D915AE5006B69F7 /* 6Fs.aif */; };
+		0C6D4DEE1D915AE5006B69F7 /* 6G.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D931D915AE5006B69F7 /* 6G.aif */; };
+		0C6D4DEF1D915AE5006B69F7 /* 6Gs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D941D915AE5006B69F7 /* 6Gs.aif */; };
+		0C6D4DF01D915AE5006B69F7 /* 7A.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D951D915AE5006B69F7 /* 7A.aif */; };
+		0C6D4DF11D915AE5006B69F7 /* 7As.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D961D915AE5006B69F7 /* 7As.aif */; };
+		0C6D4DF21D915AE5006B69F7 /* 7B.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D971D915AE5006B69F7 /* 7B.aif */; };
+		0C6D4DF31D915AE5006B69F7 /* 7C.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D981D915AE5006B69F7 /* 7C.aif */; };
+		0C6D4DF41D915AE5006B69F7 /* 7Cs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D991D915AE5006B69F7 /* 7Cs.aif */; };
+		0C6D4DF51D915AE5006B69F7 /* 7D.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D9A1D915AE5006B69F7 /* 7D.aif */; };
+		0C6D4DF61D915AE5006B69F7 /* 7Ds.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D9B1D915AE5006B69F7 /* 7Ds.aif */; };
+		0C6D4DF71D915AE5006B69F7 /* 7E.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D9C1D915AE5006B69F7 /* 7E.aif */; };
+		0C6D4DF81D915AE5006B69F7 /* 7F.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D9D1D915AE5006B69F7 /* 7F.aif */; };
+		0C6D4DF91D915AE5006B69F7 /* 7Fs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D9E1D915AE5006B69F7 /* 7Fs.aif */; };
+		0C6D4DFA1D915AE5006B69F7 /* 7G.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4D9F1D915AE5006B69F7 /* 7G.aif */; };
+		0C6D4DFB1D915AE5006B69F7 /* 7Gs.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4DA01D915AE5006B69F7 /* 7Gs.aif */; };
+		0C6D4DFC1D915AE5006B69F7 /* 8A.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4DA11D915AE5006B69F7 /* 8A.aif */; };
+		0C6D4DFD1D915AE5006B69F7 /* 8As.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4DA21D915AE5006B69F7 /* 8As.aif */; };
+		0C6D4DFE1D915AE5006B69F7 /* 8B.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4DA31D915AE5006B69F7 /* 8B.aif */; };
+		0C6D4DFF1D915AE5006B69F7 /* 8C.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4DA41D915AE5006B69F7 /* 8C.aif */; };
+		0C6D4E001D915AE5006B69F7 /* orig in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4DA51D915AE5006B69F7 /* orig */; };
+		0C6D4E011D915AE5006B69F7 /* renamed in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4DA61D915AE5006B69F7 /* renamed */; };
+		0C6D4E021D915AE5006B69F7 /* renameIt.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D4DA71D915AE5006B69F7 /* renameIt.sh */; };
+		0C78F0801D9298AE00DEB24F /* KeyBoardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C78F07F1D9298AD00DEB24F /* KeyBoardScrollView.swift */; };
+		0C78F0821D92A7CA00DEB24F /* KeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C78F0811D92A7CA00DEB24F /* KeyBoardView.swift */; };
+		9895BE81BA2128F637CB2B24 /* Pods_PianoKeyBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F985D7B55CAE3A53D501B9B /* Pods_PianoKeyBoardTests.framework */; };
+		E825A3CC30C47A6B7A32A020 /* Pods_PianoKeyBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9CA6FB059FB1E75C5FA82C /* Pods_PianoKeyBoard.framework */; };
+		E8F8B6CAFAB0855FB527C6B8 /* Pods_PianoKeyBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05F1062F0349C64F953ACD4 /* Pods_PianoKeyBoardUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C6D4CDE1D915160006B69F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C6D4CC11D91515E006B69F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C6D4CC81D91515E006B69F7;
+			remoteInfo = PianoKeyBoard;
+		};
+		0C6D4CE91D915160006B69F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C6D4CC11D91515E006B69F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C6D4CC81D91515E006B69F7;
+			remoteInfo = PianoKeyBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C613FCE1D990AA700D64351 /* BaseKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseKey.swift; sourceTree = "<group>"; };
+		0C694E451D95313900764129 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0C6D4CC91D91515E006B69F7 /* PianoKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6D4CCC1D91515F006B69F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C6D4CCE1D91515F006B69F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C6D4CD11D91515F006B69F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C6D4CD31D91515F006B69F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C6D4CD61D91515F006B69F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C6D4CD81D91515F006B69F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6D4CDD1D915160006B69F7 /* PianoKeyBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoKeyBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6D4CE11D915160006B69F7 /* PianoKeyBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyBoardTests.swift; sourceTree = "<group>"; };
+		0C6D4CE31D915160006B69F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6D4CE81D915160006B69F7 /* PianoKeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoKeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6D4CEC1D915160006B69F7 /* PianoKeyBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyBoardUITests.swift; sourceTree = "<group>"; };
+		0C6D4CEE1D915160006B69F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6D4D001D9154CE006B69F7 /* BlackKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackKey.swift; sourceTree = "<group>"; };
+		0C6D4D021D9154DF006B69F7 /* WhiteKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteKey.swift; sourceTree = "<group>"; };
+		0C6D4D0E1D915AA8006B69F7 /* ebony_keydown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ebony_keydown.png; path = Resources/images/ebony_keydown.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D0F1D915AA8006B69F7 /* ebony_keydown2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ebony_keydown2.png; path = Resources/images/ebony_keydown2.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D101D915AA8006B69F7 /* ebony_keyup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ebony_keyup.png; path = Resources/images/ebony_keyup.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D111D915AA8006B69F7 /* ebony_keyup2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ebony_keyup2.png; path = Resources/images/ebony_keyup2.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D151D915AA9006B69F7 /* ivory_keydown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ivory_keydown.png; path = Resources/images/ivory_keydown.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D161D915AA9006B69F7 /* ivory_keydown2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ivory_keydown2.png; path = Resources/images/ivory_keydown2.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D171D915AA9006B69F7 /* ivory_keyup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ivory_keyup.png; path = Resources/images/ivory_keyup.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D181D915AA9006B69F7 /* ivory_keyup2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ivory_keyup2.png; path = Resources/images/ivory_keyup2.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D1D1D915AA9006B69F7 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transparent.png; path = Resources/images/transparent.png; sourceTree = SOURCE_ROOT; };
+		0C6D4D4B1D915AD4006B69F7 /* keyboardLayout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = keyboardLayout.plist; path = Resources/meta/keyboardLayout.plist; sourceTree = SOURCE_ROOT; };
+		0C6D4D4D1D915AE4006B69F7 /* 0A.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 0A.aif; path = Resources/pianoAudio/0A.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D4E1D915AE4006B69F7 /* 0As.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 0As.aif; path = Resources/pianoAudio/0As.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D4F1D915AE4006B69F7 /* 0B.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 0B.aif; path = Resources/pianoAudio/0B.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D501D915AE4006B69F7 /* 1C.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1C.aif; path = Resources/pianoAudio/1C.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D511D915AE4006B69F7 /* 1Cs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1Cs.aif; path = Resources/pianoAudio/1Cs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D521D915AE4006B69F7 /* 1D.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1D.aif; path = Resources/pianoAudio/1D.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D531D915AE4006B69F7 /* 1Ds.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1Ds.aif; path = Resources/pianoAudio/1Ds.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D541D915AE4006B69F7 /* 1E.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1E.aif; path = Resources/pianoAudio/1E.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D551D915AE4006B69F7 /* 1F.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1F.aif; path = Resources/pianoAudio/1F.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D561D915AE4006B69F7 /* 1Fs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1Fs.aif; path = Resources/pianoAudio/1Fs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D571D915AE4006B69F7 /* 1G.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1G.aif; path = Resources/pianoAudio/1G.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D581D915AE4006B69F7 /* 1Gs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1Gs.aif; path = Resources/pianoAudio/1Gs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D591D915AE4006B69F7 /* 2A.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2A.aif; path = Resources/pianoAudio/2A.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D5A1D915AE4006B69F7 /* 2As.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2As.aif; path = Resources/pianoAudio/2As.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D5B1D915AE4006B69F7 /* 2B.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2B.aif; path = Resources/pianoAudio/2B.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D5C1D915AE4006B69F7 /* 2C.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2C.aif; path = Resources/pianoAudio/2C.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D5D1D915AE4006B69F7 /* 2Cs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2Cs.aif; path = Resources/pianoAudio/2Cs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D5E1D915AE4006B69F7 /* 2D.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2D.aif; path = Resources/pianoAudio/2D.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D5F1D915AE4006B69F7 /* 2Ds.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2Ds.aif; path = Resources/pianoAudio/2Ds.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D601D915AE4006B69F7 /* 2E.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2E.aif; path = Resources/pianoAudio/2E.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D611D915AE4006B69F7 /* 2F.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2F.aif; path = Resources/pianoAudio/2F.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D621D915AE4006B69F7 /* 2Fs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2Fs.aif; path = Resources/pianoAudio/2Fs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D631D915AE4006B69F7 /* 2G.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2G.aif; path = Resources/pianoAudio/2G.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D641D915AE4006B69F7 /* 2Gs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2Gs.aif; path = Resources/pianoAudio/2Gs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D651D915AE4006B69F7 /* 3A.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3A.aif; path = Resources/pianoAudio/3A.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D661D915AE4006B69F7 /* 3As.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3As.aif; path = Resources/pianoAudio/3As.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D671D915AE4006B69F7 /* 3B.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3B.aif; path = Resources/pianoAudio/3B.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D681D915AE4006B69F7 /* 3C.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3C.aif; path = Resources/pianoAudio/3C.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D691D915AE4006B69F7 /* 3Cs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3Cs.aif; path = Resources/pianoAudio/3Cs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D6A1D915AE4006B69F7 /* 3D.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3D.aif; path = Resources/pianoAudio/3D.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D6B1D915AE4006B69F7 /* 3Ds.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3Ds.aif; path = Resources/pianoAudio/3Ds.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D6C1D915AE4006B69F7 /* 3E.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3E.aif; path = Resources/pianoAudio/3E.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D6D1D915AE4006B69F7 /* 3F.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3F.aif; path = Resources/pianoAudio/3F.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D6E1D915AE4006B69F7 /* 3Fs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3Fs.aif; path = Resources/pianoAudio/3Fs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D6F1D915AE4006B69F7 /* 3G.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3G.aif; path = Resources/pianoAudio/3G.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D701D915AE4006B69F7 /* 3Gs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3Gs.aif; path = Resources/pianoAudio/3Gs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D711D915AE4006B69F7 /* 4A.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4A.aif; path = Resources/pianoAudio/4A.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D721D915AE4006B69F7 /* 4As.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4As.aif; path = Resources/pianoAudio/4As.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D731D915AE4006B69F7 /* 4B.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4B.aif; path = Resources/pianoAudio/4B.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D741D915AE4006B69F7 /* 4C.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4C.aif; path = Resources/pianoAudio/4C.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D751D915AE4006B69F7 /* 4Cs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4Cs.aif; path = Resources/pianoAudio/4Cs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D761D915AE4006B69F7 /* 4D.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4D.aif; path = Resources/pianoAudio/4D.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D771D915AE4006B69F7 /* 4Ds.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4Ds.aif; path = Resources/pianoAudio/4Ds.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D781D915AE4006B69F7 /* 4E.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4E.aif; path = Resources/pianoAudio/4E.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D791D915AE4006B69F7 /* 4F.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4F.aif; path = Resources/pianoAudio/4F.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D7A1D915AE4006B69F7 /* 4Fs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4Fs.aif; path = Resources/pianoAudio/4Fs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D7B1D915AE4006B69F7 /* 4G.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4G.aif; path = Resources/pianoAudio/4G.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D7C1D915AE4006B69F7 /* 4Gs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4Gs.aif; path = Resources/pianoAudio/4Gs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D7D1D915AE4006B69F7 /* 5A.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5A.aif; path = Resources/pianoAudio/5A.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D7E1D915AE4006B69F7 /* 5As.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5As.aif; path = Resources/pianoAudio/5As.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D7F1D915AE4006B69F7 /* 5B.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5B.aif; path = Resources/pianoAudio/5B.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D801D915AE4006B69F7 /* 5C.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5C.aif; path = Resources/pianoAudio/5C.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D811D915AE4006B69F7 /* 5Cs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5Cs.aif; path = Resources/pianoAudio/5Cs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D821D915AE4006B69F7 /* 5D.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5D.aif; path = Resources/pianoAudio/5D.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D831D915AE4006B69F7 /* 5Ds.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5Ds.aif; path = Resources/pianoAudio/5Ds.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D841D915AE4006B69F7 /* 5E.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5E.aif; path = Resources/pianoAudio/5E.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D851D915AE4006B69F7 /* 5F.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5F.aif; path = Resources/pianoAudio/5F.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D861D915AE4006B69F7 /* 5Fs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5Fs.aif; path = Resources/pianoAudio/5Fs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D871D915AE4006B69F7 /* 5G.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5G.aif; path = Resources/pianoAudio/5G.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D881D915AE4006B69F7 /* 5Gs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5Gs.aif; path = Resources/pianoAudio/5Gs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D891D915AE4006B69F7 /* 6A.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6A.aif; path = Resources/pianoAudio/6A.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D8A1D915AE4006B69F7 /* 6As.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6As.aif; path = Resources/pianoAudio/6As.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D8B1D915AE5006B69F7 /* 6B.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6B.aif; path = Resources/pianoAudio/6B.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D8C1D915AE5006B69F7 /* 6C.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6C.aif; path = Resources/pianoAudio/6C.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D8D1D915AE5006B69F7 /* 6Cs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6Cs.aif; path = Resources/pianoAudio/6Cs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D8E1D915AE5006B69F7 /* 6D.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6D.aif; path = Resources/pianoAudio/6D.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D8F1D915AE5006B69F7 /* 6Ds.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6Ds.aif; path = Resources/pianoAudio/6Ds.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D901D915AE5006B69F7 /* 6E.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6E.aif; path = Resources/pianoAudio/6E.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D911D915AE5006B69F7 /* 6F.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6F.aif; path = Resources/pianoAudio/6F.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D921D915AE5006B69F7 /* 6Fs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6Fs.aif; path = Resources/pianoAudio/6Fs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D931D915AE5006B69F7 /* 6G.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6G.aif; path = Resources/pianoAudio/6G.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D941D915AE5006B69F7 /* 6Gs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6Gs.aif; path = Resources/pianoAudio/6Gs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D951D915AE5006B69F7 /* 7A.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7A.aif; path = Resources/pianoAudio/7A.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D961D915AE5006B69F7 /* 7As.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7As.aif; path = Resources/pianoAudio/7As.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D971D915AE5006B69F7 /* 7B.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7B.aif; path = Resources/pianoAudio/7B.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D981D915AE5006B69F7 /* 7C.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7C.aif; path = Resources/pianoAudio/7C.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D991D915AE5006B69F7 /* 7Cs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7Cs.aif; path = Resources/pianoAudio/7Cs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D9A1D915AE5006B69F7 /* 7D.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7D.aif; path = Resources/pianoAudio/7D.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D9B1D915AE5006B69F7 /* 7Ds.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7Ds.aif; path = Resources/pianoAudio/7Ds.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D9C1D915AE5006B69F7 /* 7E.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7E.aif; path = Resources/pianoAudio/7E.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D9D1D915AE5006B69F7 /* 7F.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7F.aif; path = Resources/pianoAudio/7F.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D9E1D915AE5006B69F7 /* 7Fs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7Fs.aif; path = Resources/pianoAudio/7Fs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4D9F1D915AE5006B69F7 /* 7G.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7G.aif; path = Resources/pianoAudio/7G.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4DA01D915AE5006B69F7 /* 7Gs.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7Gs.aif; path = Resources/pianoAudio/7Gs.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4DA11D915AE5006B69F7 /* 8A.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 8A.aif; path = Resources/pianoAudio/8A.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4DA21D915AE5006B69F7 /* 8As.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 8As.aif; path = Resources/pianoAudio/8As.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4DA31D915AE5006B69F7 /* 8B.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 8B.aif; path = Resources/pianoAudio/8B.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4DA41D915AE5006B69F7 /* 8C.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = 8C.aif; path = Resources/pianoAudio/8C.aif; sourceTree = SOURCE_ROOT; };
+		0C6D4DA51D915AE5006B69F7 /* orig */ = {isa = PBXFileReference; lastKnownFileType = folder; name = orig; path = Resources/pianoAudio/orig; sourceTree = SOURCE_ROOT; };
+		0C6D4DA61D915AE5006B69F7 /* renamed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = renamed; path = Resources/pianoAudio/renamed; sourceTree = SOURCE_ROOT; };
+		0C6D4DA71D915AE5006B69F7 /* renameIt.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = renameIt.sh; path = Resources/pianoAudio/renameIt.sh; sourceTree = SOURCE_ROOT; };
+		0C78F07F1D9298AD00DEB24F /* KeyBoardScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoardScrollView.swift; sourceTree = "<group>"; };
+		0C78F0811D92A7CA00DEB24F /* KeyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoardView.swift; sourceTree = "<group>"; };
+		0F985D7B55CAE3A53D501B9B /* Pods_PianoKeyBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoKeyBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3222525E86458D2DA37A4262 /* Pods-PianoKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoKeyBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoKeyBoard/Pods-PianoKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+		67AD5C800CEC8AA086826EF0 /* Pods-PianoKeyBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoKeyBoardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoKeyBoardUITests/Pods-PianoKeyBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7DBA69DF133CD19673564373 /* Pods-PianoKeyBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoKeyBoardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoKeyBoardTests/Pods-PianoKeyBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A3BC5CD8BD71DF8F2CF18FA /* Pods-PianoKeyBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoKeyBoardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoKeyBoardTests/Pods-PianoKeyBoardTests.release.xcconfig"; sourceTree = "<group>"; };
+		A05F1062F0349C64F953ACD4 /* Pods_PianoKeyBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoKeyBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74493F4531289D2DB7761DA /* Pods-PianoKeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoKeyBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoKeyBoard/Pods-PianoKeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		BBA350561F5683CA070A9187 /* Pods-PianoKeyBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoKeyBoardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoKeyBoardUITests/Pods-PianoKeyBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB9CA6FB059FB1E75C5FA82C /* Pods_PianoKeyBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoKeyBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C6D4CC61D91515E006B69F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C694E461D95313900764129 /* AudioToolbox.framework in Frameworks */,
+				E825A3CC30C47A6B7A32A020 /* Pods_PianoKeyBoard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6D4CDA1D915160006B69F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9895BE81BA2128F637CB2B24 /* Pods_PianoKeyBoardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6D4CE51D915160006B69F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F8B6CAFAB0855FB527C6B8 /* Pods_PianoKeyBoardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C6D4CC01D91515E006B69F7 = {
+			isa = PBXGroup;
+			children = (
+				0C694E451D95313900764129 /* AudioToolbox.framework */,
+				0C6D4CCB1D91515F006B69F7 /* PianoKeyBoard */,
+				0C6D4CE01D915160006B69F7 /* PianoKeyBoardTests */,
+				0C6D4CEB1D915160006B69F7 /* PianoKeyBoardUITests */,
+				0C6D4CCA1D91515E006B69F7 /* Products */,
+				43E8D38BF078656912C5A716 /* Pods */,
+				E2BAD6C91937AB0F349CD5FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C6D4CCA1D91515E006B69F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D4CC91D91515E006B69F7 /* PianoKeyBoard.app */,
+				0C6D4CDD1D915160006B69F7 /* PianoKeyBoardTests.xctest */,
+				0C6D4CE81D915160006B69F7 /* PianoKeyBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C6D4CCB1D91515F006B69F7 /* PianoKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D4D061D915A69006B69F7 /* PianoAudio */,
+				0C6D4D051D915A61006B69F7 /* meta */,
+				0C6D4D041D915A56006B69F7 /* Images */,
+				0C6D4CCC1D91515F006B69F7 /* AppDelegate.swift */,
+				0C6D4CCE1D91515F006B69F7 /* ViewController.swift */,
+				0C613FCE1D990AA700D64351 /* BaseKey.swift */,
+				0C6D4D001D9154CE006B69F7 /* BlackKey.swift */,
+				0C6D4D021D9154DF006B69F7 /* WhiteKey.swift */,
+				0C78F07F1D9298AD00DEB24F /* KeyBoardScrollView.swift */,
+				0C78F0811D92A7CA00DEB24F /* KeyBoardView.swift */,
+				0C6D4CD01D91515F006B69F7 /* Main.storyboard */,
+				0C6D4CD31D91515F006B69F7 /* Assets.xcassets */,
+				0C6D4CD51D91515F006B69F7 /* LaunchScreen.storyboard */,
+				0C6D4CD81D91515F006B69F7 /* Info.plist */,
+			);
+			path = PianoKeyBoard;
+			sourceTree = "<group>";
+		};
+		0C6D4CE01D915160006B69F7 /* PianoKeyBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D4CE11D915160006B69F7 /* PianoKeyBoardTests.swift */,
+				0C6D4CE31D915160006B69F7 /* Info.plist */,
+			);
+			path = PianoKeyBoardTests;
+			sourceTree = "<group>";
+		};
+		0C6D4CEB1D915160006B69F7 /* PianoKeyBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D4CEC1D915160006B69F7 /* PianoKeyBoardUITests.swift */,
+				0C6D4CEE1D915160006B69F7 /* Info.plist */,
+			);
+			path = PianoKeyBoardUITests;
+			sourceTree = "<group>";
+		};
+		0C6D4D041D915A56006B69F7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D4D0E1D915AA8006B69F7 /* ebony_keydown.png */,
+				0C6D4D0F1D915AA8006B69F7 /* ebony_keydown2.png */,
+				0C6D4D101D915AA8006B69F7 /* ebony_keyup.png */,
+				0C6D4D111D915AA8006B69F7 /* ebony_keyup2.png */,
+				0C6D4D151D915AA9006B69F7 /* ivory_keydown.png */,
+				0C6D4D161D915AA9006B69F7 /* ivory_keydown2.png */,
+				0C6D4D171D915AA9006B69F7 /* ivory_keyup.png */,
+				0C6D4D181D915AA9006B69F7 /* ivory_keyup2.png */,
+				0C6D4D1D1D915AA9006B69F7 /* transparent.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0C6D4D051D915A61006B69F7 /* meta */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D4D4B1D915AD4006B69F7 /* keyboardLayout.plist */,
+			);
+			name = meta;
+			sourceTree = "<group>";
+		};
+		0C6D4D061D915A69006B69F7 /* PianoAudio */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D4D4D1D915AE4006B69F7 /* 0A.aif */,
+				0C6D4D4E1D915AE4006B69F7 /* 0As.aif */,
+				0C6D4D4F1D915AE4006B69F7 /* 0B.aif */,
+				0C6D4D501D915AE4006B69F7 /* 1C.aif */,
+				0C6D4D511D915AE4006B69F7 /* 1Cs.aif */,
+				0C6D4D521D915AE4006B69F7 /* 1D.aif */,
+				0C6D4D531D915AE4006B69F7 /* 1Ds.aif */,
+				0C6D4D541D915AE4006B69F7 /* 1E.aif */,
+				0C6D4D551D915AE4006B69F7 /* 1F.aif */,
+				0C6D4D561D915AE4006B69F7 /* 1Fs.aif */,
+				0C6D4D571D915AE4006B69F7 /* 1G.aif */,
+				0C6D4D581D915AE4006B69F7 /* 1Gs.aif */,
+				0C6D4D591D915AE4006B69F7 /* 2A.aif */,
+				0C6D4D5A1D915AE4006B69F7 /* 2As.aif */,
+				0C6D4D5B1D915AE4006B69F7 /* 2B.aif */,
+				0C6D4D5C1D915AE4006B69F7 /* 2C.aif */,
+				0C6D4D5D1D915AE4006B69F7 /* 2Cs.aif */,
+				0C6D4D5E1D915AE4006B69F7 /* 2D.aif */,
+				0C6D4D5F1D915AE4006B69F7 /* 2Ds.aif */,
+				0C6D4D601D915AE4006B69F7 /* 2E.aif */,
+				0C6D4D611D915AE4006B69F7 /* 2F.aif */,
+				0C6D4D621D915AE4006B69F7 /* 2Fs.aif */,
+				0C6D4D631D915AE4006B69F7 /* 2G.aif */,
+				0C6D4D641D915AE4006B69F7 /* 2Gs.aif */,
+				0C6D4D651D915AE4006B69F7 /* 3A.aif */,
+				0C6D4D661D915AE4006B69F7 /* 3As.aif */,
+				0C6D4D671D915AE4006B69F7 /* 3B.aif */,
+				0C6D4D681D915AE4006B69F7 /* 3C.aif */,
+				0C6D4D691D915AE4006B69F7 /* 3Cs.aif */,
+				0C6D4D6A1D915AE4006B69F7 /* 3D.aif */,
+				0C6D4D6B1D915AE4006B69F7 /* 3Ds.aif */,
+				0C6D4D6C1D915AE4006B69F7 /* 3E.aif */,
+				0C6D4D6D1D915AE4006B69F7 /* 3F.aif */,
+				0C6D4D6E1D915AE4006B69F7 /* 3Fs.aif */,
+				0C6D4D6F1D915AE4006B69F7 /* 3G.aif */,
+				0C6D4D701D915AE4006B69F7 /* 3Gs.aif */,
+				0C6D4D711D915AE4006B69F7 /* 4A.aif */,
+				0C6D4D721D915AE4006B69F7 /* 4As.aif */,
+				0C6D4D731D915AE4006B69F7 /* 4B.aif */,
+				0C6D4D741D915AE4006B69F7 /* 4C.aif */,
+				0C6D4D751D915AE4006B69F7 /* 4Cs.aif */,
+				0C6D4D761D915AE4006B69F7 /* 4D.aif */,
+				0C6D4D771D915AE4006B69F7 /* 4Ds.aif */,
+				0C6D4D781D915AE4006B69F7 /* 4E.aif */,
+				0C6D4D791D915AE4006B69F7 /* 4F.aif */,
+				0C6D4D7A1D915AE4006B69F7 /* 4Fs.aif */,
+				0C6D4D7B1D915AE4006B69F7 /* 4G.aif */,
+				0C6D4D7C1D915AE4006B69F7 /* 4Gs.aif */,
+				0C6D4D7D1D915AE4006B69F7 /* 5A.aif */,
+				0C6D4D7E1D915AE4006B69F7 /* 5As.aif */,
+				0C6D4D7F1D915AE4006B69F7 /* 5B.aif */,
+				0C6D4D801D915AE4006B69F7 /* 5C.aif */,
+				0C6D4D811D915AE4006B69F7 /* 5Cs.aif */,
+				0C6D4D821D915AE4006B69F7 /* 5D.aif */,
+				0C6D4D831D915AE4006B69F7 /* 5Ds.aif */,
+				0C6D4D841D915AE4006B69F7 /* 5E.aif */,
+				0C6D4D851D915AE4006B69F7 /* 5F.aif */,
+				0C6D4D861D915AE4006B69F7 /* 5Fs.aif */,
+				0C6D4D871D915AE4006B69F7 /* 5G.aif */,
+				0C6D4D881D915AE4006B69F7 /* 5Gs.aif */,
+				0C6D4D891D915AE4006B69F7 /* 6A.aif */,
+				0C6D4D8A1D915AE4006B69F7 /* 6As.aif */,
+				0C6D4D8B1D915AE5006B69F7 /* 6B.aif */,
+				0C6D4D8C1D915AE5006B69F7 /* 6C.aif */,
+				0C6D4D8D1D915AE5006B69F7 /* 6Cs.aif */,
+				0C6D4D8E1D915AE5006B69F7 /* 6D.aif */,
+				0C6D4D8F1D915AE5006B69F7 /* 6Ds.aif */,
+				0C6D4D901D915AE5006B69F7 /* 6E.aif */,
+				0C6D4D911D915AE5006B69F7 /* 6F.aif */,
+				0C6D4D921D915AE5006B69F7 /* 6Fs.aif */,
+				0C6D4D931D915AE5006B69F7 /* 6G.aif */,
+				0C6D4D941D915AE5006B69F7 /* 6Gs.aif */,
+				0C6D4D951D915AE5006B69F7 /* 7A.aif */,
+				0C6D4D961D915AE5006B69F7 /* 7As.aif */,
+				0C6D4D971D915AE5006B69F7 /* 7B.aif */,
+				0C6D4D981D915AE5006B69F7 /* 7C.aif */,
+				0C6D4D991D915AE5006B69F7 /* 7Cs.aif */,
+				0C6D4D9A1D915AE5006B69F7 /* 7D.aif */,
+				0C6D4D9B1D915AE5006B69F7 /* 7Ds.aif */,
+				0C6D4D9C1D915AE5006B69F7 /* 7E.aif */,
+				0C6D4D9D1D915AE5006B69F7 /* 7F.aif */,
+				0C6D4D9E1D915AE5006B69F7 /* 7Fs.aif */,
+				0C6D4D9F1D915AE5006B69F7 /* 7G.aif */,
+				0C6D4DA01D915AE5006B69F7 /* 7Gs.aif */,
+				0C6D4DA11D915AE5006B69F7 /* 8A.aif */,
+				0C6D4DA21D915AE5006B69F7 /* 8As.aif */,
+				0C6D4DA31D915AE5006B69F7 /* 8B.aif */,
+				0C6D4DA41D915AE5006B69F7 /* 8C.aif */,
+				0C6D4DA51D915AE5006B69F7 /* orig */,
+				0C6D4DA61D915AE5006B69F7 /* renamed */,
+				0C6D4DA71D915AE5006B69F7 /* renameIt.sh */,
+			);
+			name = PianoAudio;
+			sourceTree = "<group>";
+		};
+		43E8D38BF078656912C5A716 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A74493F4531289D2DB7761DA /* Pods-PianoKeyBoard.debug.xcconfig */,
+				3222525E86458D2DA37A4262 /* Pods-PianoKeyBoard.release.xcconfig */,
+				7DBA69DF133CD19673564373 /* Pods-PianoKeyBoardTests.debug.xcconfig */,
+				9A3BC5CD8BD71DF8F2CF18FA /* Pods-PianoKeyBoardTests.release.xcconfig */,
+				BBA350561F5683CA070A9187 /* Pods-PianoKeyBoardUITests.debug.xcconfig */,
+				67AD5C800CEC8AA086826EF0 /* Pods-PianoKeyBoardUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2BAD6C91937AB0F349CD5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB9CA6FB059FB1E75C5FA82C /* Pods_PianoKeyBoard.framework */,
+				0F985D7B55CAE3A53D501B9B /* Pods_PianoKeyBoardTests.framework */,
+				A05F1062F0349C64F953ACD4 /* Pods_PianoKeyBoardUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C6D4CC81D91515E006B69F7 /* PianoKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6D4CF11D915160006B69F7 /* Build configuration list for PBXNativeTarget "PianoKeyBoard" */;
+			buildPhases = (
+				402C7B4EDF46105BC46F2489 /* [CP] Check Pods Manifest.lock */,
+				0C6D4CC51D91515E006B69F7 /* Sources */,
+				0C6D4CC61D91515E006B69F7 /* Frameworks */,
+				0C6D4CC71D91515E006B69F7 /* Resources */,
+				EB8AFDAF633C7D3D0BC8D0E7 /* [CP] Embed Pods Frameworks */,
+				5079DE0356EF9B9FB81D7E61 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PianoKeyBoard;
+			productName = PianoKeyBoard;
+			productReference = 0C6D4CC91D91515E006B69F7 /* PianoKeyBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C6D4CDC1D915160006B69F7 /* PianoKeyBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6D4CF41D915160006B69F7 /* Build configuration list for PBXNativeTarget "PianoKeyBoardTests" */;
+			buildPhases = (
+				E92FCC15DAAEB23C1EECC324 /* [CP] Check Pods Manifest.lock */,
+				0C6D4CD91D915160006B69F7 /* Sources */,
+				0C6D4CDA1D915160006B69F7 /* Frameworks */,
+				0C6D4CDB1D915160006B69F7 /* Resources */,
+				7D2BDC7D35339987831211E7 /* [CP] Embed Pods Frameworks */,
+				40E7900BAEB9D1C7287C1599 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C6D4CDF1D915160006B69F7 /* PBXTargetDependency */,
+			);
+			name = PianoKeyBoardTests;
+			productName = PianoKeyBoardTests;
+			productReference = 0C6D4CDD1D915160006B69F7 /* PianoKeyBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C6D4CE71D915160006B69F7 /* PianoKeyBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6D4CF71D915160006B69F7 /* Build configuration list for PBXNativeTarget "PianoKeyBoardUITests" */;
+			buildPhases = (
+				362D3298D7E6108BDD013BD3 /* [CP] Check Pods Manifest.lock */,
+				0C6D4CE41D915160006B69F7 /* Sources */,
+				0C6D4CE51D915160006B69F7 /* Frameworks */,
+				0C6D4CE61D915160006B69F7 /* Resources */,
+				6065BA8BA4BC3C288F9A4C58 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C6D4CEA1D915160006B69F7 /* PBXTargetDependency */,
+			);
+			name = PianoKeyBoardUITests;
+			productName = PianoKeyBoardUITests;
+			productReference = 0C6D4CE81D915160006B69F7 /* PianoKeyBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C6D4CC11D91515E006B69F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Ramesh;
+				TargetAttributes = {
+					0C6D4CC81D91515E006B69F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 78SUP6P47M;
+						LastSwiftMigration = 0800;
+					};
+					0C6D4CDC1D915160006B69F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 78SUP6P47M;
+						LastSwiftMigration = 0800;
+						TestTargetID = 0C6D4CC81D91515E006B69F7;
+					};
+					0C6D4CE71D915160006B69F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 78SUP6P47M;
+						LastSwiftMigration = 0800;
+						TestTargetID = 0C6D4CC81D91515E006B69F7;
+					};
+				};
+			};
+			buildConfigurationList = 0C6D4CC41D91515E006B69F7 /* Build configuration list for PBXProject "PianoKeyBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C6D4CC01D91515E006B69F7;
+			productRefGroup = 0C6D4CCA1D91515E006B69F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C6D4CC81D91515E006B69F7 /* PianoKeyBoard */,
+				0C6D4CDC1D915160006B69F7 /* PianoKeyBoardTests */,
+				0C6D4CE71D915160006B69F7 /* PianoKeyBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C6D4CC71D91515E006B69F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6D4DF11D915AE5006B69F7 /* 7As.aif in Resources */,
+				0C6D4DC21D915AE5006B69F7 /* 3B.aif in Resources */,
+				0C6D4DC81D915AE5006B69F7 /* 3F.aif in Resources */,
+				0C6D4DAE1D915AE5006B69F7 /* 1Ds.aif in Resources */,
+				0C6D4DEC1D915AE5006B69F7 /* 6F.aif in Resources */,
+				0C6D4DAC1D915AE5006B69F7 /* 1Cs.aif in Resources */,
+				0C6D4D3A1D915AA9006B69F7 /* ivory_keyup2.png in Resources */,
+				0C6D4DCC1D915AE5006B69F7 /* 4A.aif in Resources */,
+				0C6D4DBA1D915AE5006B69F7 /* 2Ds.aif in Resources */,
+				0C6D4D311D915AA9006B69F7 /* ebony_keydown2.png in Resources */,
+				0C6D4DDB1D915AE5006B69F7 /* 5C.aif in Resources */,
+				0C6D4DC91D915AE5006B69F7 /* 3Fs.aif in Resources */,
+				0C6D4CD71D91515F006B69F7 /* LaunchScreen.storyboard in Resources */,
+				0C6D4DD01D915AE5006B69F7 /* 4Cs.aif in Resources */,
+				0C6D4DCA1D915AE5006B69F7 /* 3G.aif in Resources */,
+				0C6D4DB71D915AE5006B69F7 /* 2C.aif in Resources */,
+				0C6D4DD61D915AE5006B69F7 /* 4G.aif in Resources */,
+				0C6D4DBE1D915AE5006B69F7 /* 2G.aif in Resources */,
+				0C6D4DB81D915AE5006B69F7 /* 2Cs.aif in Resources */,
+				0C6D4DE31D915AE5006B69F7 /* 5Gs.aif in Resources */,
+				0C6D4DC11D915AE5006B69F7 /* 3As.aif in Resources */,
+				0C6D4DB61D915AE5006B69F7 /* 2B.aif in Resources */,
+				0C6D4DBD1D915AE5006B69F7 /* 2Fs.aif in Resources */,
+				0C6D4DD91D915AE5006B69F7 /* 5As.aif in Resources */,
+				0C6D4DF81D915AE5006B69F7 /* 7F.aif in Resources */,
+				0C6D4DFF1D915AE5006B69F7 /* 8C.aif in Resources */,
+				0C6D4DEE1D915AE5006B69F7 /* 6G.aif in Resources */,
+				0C6D4DF51D915AE5006B69F7 /* 7D.aif in Resources */,
+				0C6D4E001D915AE5006B69F7 /* orig in Resources */,
+				0C6D4D4C1D915AD4006B69F7 /* keyboardLayout.plist in Resources */,
+				0C6D4DE51D915AE5006B69F7 /* 6As.aif in Resources */,
+				0C6D4DFD1D915AE5006B69F7 /* 8As.aif in Resources */,
+				0C6D4DD21D915AE5006B69F7 /* 4Ds.aif in Resources */,
+				0C6D4DF71D915AE5006B69F7 /* 7E.aif in Resources */,
+				0C6D4DD81D915AE5006B69F7 /* 5A.aif in Resources */,
+				0C6D4DEB1D915AE5006B69F7 /* 6E.aif in Resources */,
+				0C6D4DB51D915AE5006B69F7 /* 2As.aif in Resources */,
+				0C6D4DB11D915AE5006B69F7 /* 1Fs.aif in Resources */,
+				0C6D4E021D915AE5006B69F7 /* renameIt.sh in Resources */,
+				0C6D4DBB1D915AE5006B69F7 /* 2E.aif in Resources */,
+				0C6D4DA81D915AE5006B69F7 /* 0A.aif in Resources */,
+				0C6D4DCE1D915AE5006B69F7 /* 4B.aif in Resources */,
+				0C6D4CD41D91515F006B69F7 /* Assets.xcassets in Resources */,
+				0C6D4DB01D915AE5006B69F7 /* 1F.aif in Resources */,
+				0C6D4DC71D915AE5006B69F7 /* 3E.aif in Resources */,
+				0C6D4DE41D915AE5006B69F7 /* 6A.aif in Resources */,
+				0C6D4DEA1D915AE5006B69F7 /* 6Ds.aif in Resources */,
+				0C6D4DAD1D915AE5006B69F7 /* 1D.aif in Resources */,
+				0C6D4DCF1D915AE5006B69F7 /* 4C.aif in Resources */,
+				0C6D4DFA1D915AE5006B69F7 /* 7G.aif in Resources */,
+				0C6D4DD71D915AE5006B69F7 /* 4Gs.aif in Resources */,
+				0C6D4DD41D915AE5006B69F7 /* 4F.aif in Resources */,
+				0C6D4D381D915AA9006B69F7 /* ivory_keydown2.png in Resources */,
+				0C6D4DF41D915AE5006B69F7 /* 7Cs.aif in Resources */,
+				0C6D4DAA1D915AE5006B69F7 /* 0B.aif in Resources */,
+				0C6D4DE11D915AE5006B69F7 /* 5Fs.aif in Resources */,
+				0C6D4D301D915AA9006B69F7 /* ebony_keydown.png in Resources */,
+				0C6D4DF61D915AE5006B69F7 /* 7Ds.aif in Resources */,
+				0C6D4D321D915AA9006B69F7 /* ebony_keyup.png in Resources */,
+				0C6D4DF21D915AE5006B69F7 /* 7B.aif in Resources */,
+				0C6D4D371D915AA9006B69F7 /* ivory_keydown.png in Resources */,
+				0C6D4DAB1D915AE5006B69F7 /* 1C.aif in Resources */,
+				0C6D4DB91D915AE5006B69F7 /* 2D.aif in Resources */,
+				0C6D4DDD1D915AE5006B69F7 /* 5D.aif in Resources */,
+				0C6D4DAF1D915AE5006B69F7 /* 1E.aif in Resources */,
+				0C6D4DFB1D915AE5006B69F7 /* 7Gs.aif in Resources */,
+				0C6D4DA91D915AE5006B69F7 /* 0As.aif in Resources */,
+				0C6D4DEF1D915AE5006B69F7 /* 6Gs.aif in Resources */,
+				0C6D4DC61D915AE5006B69F7 /* 3Ds.aif in Resources */,
+				0C6D4CD21D91515F006B69F7 /* Main.storyboard in Resources */,
+				0C6D4DB41D915AE5006B69F7 /* 2A.aif in Resources */,
+				0C6D4DF01D915AE5006B69F7 /* 7A.aif in Resources */,
+				0C6D4DED1D915AE5006B69F7 /* 6Fs.aif in Resources */,
+				0C6D4DC41D915AE5006B69F7 /* 3Cs.aif in Resources */,
+				0C6D4DDA1D915AE5006B69F7 /* 5B.aif in Resources */,
+				0C6D4DD11D915AE5006B69F7 /* 4D.aif in Resources */,
+				0C6D4DFC1D915AE5006B69F7 /* 8A.aif in Resources */,
+				0C6D4DC51D915AE5006B69F7 /* 3D.aif in Resources */,
+				0C6D4DF31D915AE5006B69F7 /* 7C.aif in Resources */,
+				0C6D4DE61D915AE5006B69F7 /* 6B.aif in Resources */,
+				0C6D4DD31D915AE5006B69F7 /* 4E.aif in Resources */,
+				0C6D4E011D915AE5006B69F7 /* renamed in Resources */,
+				0C6D4DE91D915AE5006B69F7 /* 6D.aif in Resources */,
+				0C6D4DC01D915AE5006B69F7 /* 3A.aif in Resources */,
+				0C6D4DDE1D915AE5006B69F7 /* 5Ds.aif in Resources */,
+				0C6D4DBF1D915AE5006B69F7 /* 2Gs.aif in Resources */,
+				0C6D4DE71D915AE5006B69F7 /* 6C.aif in Resources */,
+				0C6D4D331D915AA9006B69F7 /* ebony_keyup2.png in Resources */,
+				0C6D4DBC1D915AE5006B69F7 /* 2F.aif in Resources */,
+				0C6D4DCD1D915AE5006B69F7 /* 4As.aif in Resources */,
+				0C6D4DCB1D915AE5006B69F7 /* 3Gs.aif in Resources */,
+				0C6D4D3F1D915AA9006B69F7 /* transparent.png in Resources */,
+				0C6D4DDC1D915AE5006B69F7 /* 5Cs.aif in Resources */,
+				0C6D4DE01D915AE5006B69F7 /* 5F.aif in Resources */,
+				0C6D4DE81D915AE5006B69F7 /* 6Cs.aif in Resources */,
+				0C6D4DB31D915AE5006B69F7 /* 1Gs.aif in Resources */,
+				0C6D4D391D915AA9006B69F7 /* ivory_keyup.png in Resources */,
+				0C6D4DFE1D915AE5006B69F7 /* 8B.aif in Resources */,
+				0C6D4DD51D915AE5006B69F7 /* 4Fs.aif in Resources */,
+				0C6D4DE21D915AE5006B69F7 /* 5G.aif in Resources */,
+				0C6D4DC31D915AE5006B69F7 /* 3C.aif in Resources */,
+				0C6D4DDF1D915AE5006B69F7 /* 5E.aif in Resources */,
+				0C6D4DF91D915AE5006B69F7 /* 7Fs.aif in Resources */,
+				0C6D4DB21D915AE5006B69F7 /* 1G.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6D4CDB1D915160006B69F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6D4CE61D915160006B69F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		362D3298D7E6108BDD013BD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		402C7B4EDF46105BC46F2489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40E7900BAEB9D1C7287C1599 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoKeyBoardTests/Pods-PianoKeyBoardTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5079DE0356EF9B9FB81D7E61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoKeyBoard/Pods-PianoKeyBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6065BA8BA4BC3C288F9A4C58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoKeyBoardUITests/Pods-PianoKeyBoardUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2BDC7D35339987831211E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoKeyBoardTests/Pods-PianoKeyBoardTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E92FCC15DAAEB23C1EECC324 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB8AFDAF633C7D3D0BC8D0E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoKeyBoard/Pods-PianoKeyBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C6D4CC51D91515E006B69F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6D4CCF1D91515F006B69F7 /* ViewController.swift in Sources */,
+				0C78F0801D9298AE00DEB24F /* KeyBoardScrollView.swift in Sources */,
+				0C613FCF1D990AA700D64351 /* BaseKey.swift in Sources */,
+				0C6D4CCD1D91515F006B69F7 /* AppDelegate.swift in Sources */,
+				0C78F0821D92A7CA00DEB24F /* KeyBoardView.swift in Sources */,
+				0C6D4D011D9154CE006B69F7 /* BlackKey.swift in Sources */,
+				0C6D4D031D9154DF006B69F7 /* WhiteKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6D4CD91D915160006B69F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6D4CE21D915160006B69F7 /* PianoKeyBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6D4CE41D915160006B69F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6D4CED1D915160006B69F7 /* PianoKeyBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C6D4CDF1D915160006B69F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C6D4CC81D91515E006B69F7 /* PianoKeyBoard */;
+			targetProxy = 0C6D4CDE1D915160006B69F7 /* PBXContainerItemProxy */;
+		};
+		0C6D4CEA1D915160006B69F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C6D4CC81D91515E006B69F7 /* PianoKeyBoard */;
+			targetProxy = 0C6D4CE91D915160006B69F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C6D4CD01D91515F006B69F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C6D4CD11D91515F006B69F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C6D4CD51D91515F006B69F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C6D4CD61D91515F006B69F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C6D4CEF1D915160006B69F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C6D4CF01D915160006B69F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C6D4CF21D915160006B69F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74493F4531289D2DB7761DA /* Pods-PianoKeyBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78SUP6P47M;
+				INFOPLIST_FILE = PianoKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softprodigy.PianoKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0C6D4CF31D915160006B69F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3222525E86458D2DA37A4262 /* Pods-PianoKeyBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78SUP6P47M;
+				INFOPLIST_FILE = PianoKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softprodigy.PianoKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0C6D4CF51D915160006B69F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBA69DF133CD19673564373 /* Pods-PianoKeyBoardTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 78SUP6P47M;
+				INFOPLIST_FILE = PianoKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softprodigy.PianoKeyBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoKeyBoard.app/PianoKeyBoard";
+			};
+			name = Debug;
+		};
+		0C6D4CF61D915160006B69F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A3BC5CD8BD71DF8F2CF18FA /* Pods-PianoKeyBoardTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 78SUP6P47M;
+				INFOPLIST_FILE = PianoKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softprodigy.PianoKeyBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoKeyBoard.app/PianoKeyBoard";
+			};
+			name = Release;
+		};
+		0C6D4CF81D915160006B69F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA350561F5683CA070A9187 /* Pods-PianoKeyBoardUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 78SUP6P47M;
+				INFOPLIST_FILE = PianoKeyBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softprodigy.PianoKeyBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PianoKeyBoard;
+			};
+			name = Debug;
+		};
+		0C6D4CF91D915160006B69F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67AD5C800CEC8AA086826EF0 /* Pods-PianoKeyBoardUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 78SUP6P47M;
+				INFOPLIST_FILE = PianoKeyBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softprodigy.PianoKeyBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PianoKeyBoard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C6D4CC41D91515E006B69F7 /* Build configuration list for PBXProject "PianoKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6D4CEF1D915160006B69F7 /* Debug */,
+				0C6D4CF01D915160006B69F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6D4CF11D915160006B69F7 /* Build configuration list for PBXNativeTarget "PianoKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6D4CF21D915160006B69F7 /* Debug */,
+				0C6D4CF31D915160006B69F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6D4CF41D915160006B69F7 /* Build configuration list for PBXNativeTarget "PianoKeyBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6D4CF51D915160006B69F7 /* Debug */,
+				0C6D4CF61D915160006B69F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6D4CF71D915160006B69F7 /* Build configuration list for PBXNativeTarget "PianoKeyBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6D4CF81D915160006B69F7 /* Debug */,
+				0C6D4CF91D915160006B69F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C6D4CC11D91515E006B69F7 /* Project object */;
+}
